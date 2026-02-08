@@ -194,12 +194,6 @@ The notebook covers:
 - Robust to screenshots and resized images
 - Designed to generalize beyond a single generator
 
-## ⚠️ Limitations
-
-- Cannot detect AI images with no metadata and no visual artifacts
-- Performance depends on similarity between training data and unseen generators
-- Not designed for adversarial evasion scenarios
-
 ## 🔮 Future Improvements
 
 - Model ensembles (multiple CNN backbones)
@@ -214,4 +208,4 @@ This PoC demonstrates a practical, explainable approach to AI image detection us
 - deterministic provenance checks where possible
 - learned forensic signals where necessary
 
-The system is intentionally simple, robust, and extensible — designed to reflect real-world constraints, not idealized datasets.
+
