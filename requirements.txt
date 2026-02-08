@@ -1,11 +1,41 @@
+# =========================================================
+# Core dependencies (REQUIRED for inference + API)
+# =========================================================
+
+# Numerical computing
+numpy>=1.24
+
+# Image handling
+pillow>=10.0.0
+
+# Deep learning framework (CPU or GPU)
+torch>=2.0
+torchvision>=0.15
+
+# API layer
+fastapi>=0.110
+uvicorn>=0.27
+python-multipart>=0.0.9
+
+# Metadata / provenance detection
+c2pa-python>=0.5.0
+
+
+# =========================================================
+# Training & evaluation dependencies (OPTIONAL)
+# Required ONLY if retraining the CNN model
+# =========================================================
+
+# Dataset handling (Hugging Face)
 datasets>=2.18.0
 huggingface-hub>=0.21.0
-pillow>=10.0.0
+
+# Progress bars
 tqdm>=4.66.0
+
+# Metrics & evaluation
+scikit-learn>=1.3
+matplotlib>=3.8
+
+# Data collection (Unsplash API)
 requests>=2.31.0
-pip install numpy matplotlib scikit-learn
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-fastapi
-uvicorn
-pip install python-multipart
-c2pa-python
